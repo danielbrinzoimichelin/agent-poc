@@ -60,14 +60,14 @@
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+                embeddedservice_bootstrap.settings.language = 'en_GB'; // For example, enter 'en' or 'en-US'
 
                 embeddedservice_bootstrap.init(
-                    '00DgK000003CueD',
-                    'Github_Messaging_Setting',
-                    'https://orgfarm-80839d3709-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1754584834877',
+                    '00D9Q00000HtKij',
+                    'Customer_Portal_Agent_Messaging_Channel',
+                    'https://masternaut--swordfish.sandbox.my.site.com/ESWCustomerPortalAgent1785448498532',
                     {
-                        scrt2URL: 'https://orgfarm-80839d3709-dev-ed.develop.my.salesforce-scrt.com'
+                        scrt2URL: 'https://masternaut--swordfish.sandbox.my.salesforce-scrt.com'
                     }
                 );
             } catch (err) {
@@ -75,9 +75,11 @@
             }
         };
     </script>
-    <script type='text/javascript'
-        src='https://orgfarm-80839d3709-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1754584834877/assets/js/bootstrap.min.js'
-        onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' 
+            src='https://masternaut--swordfish.sandbox.my.site.com/ESWCustomerPortalAgent1785448498532/assets/js/bootstrap.min.js' 
+            onload='initEmbeddedMessaging()'
+    ></script>
+
 
 </body>
 
