@@ -27,6 +27,15 @@
             try {
                 embeddedservice_bootstrap.settings.language = 'en_GB'; // For example, enter 'en' or 'en-US'
 
+                window.addEventListener("onEmbeddedMessagingReady", e => {
+                  embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+                   "customerId": {
+                      "value": "8938",
+                      "isEditableByEndUser": false
+                    }
+                  });
+                });
+
                 embeddedservice_bootstrap.init(
                     '00D9Q00000HtKij',
                     'Customer_Portal_Agent_Messaging_Channel',
